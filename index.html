@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/deepseek-harness/favicon.svg" />
+    <link rel="canonical" href="https://yuxinrun.github.io/deepseek-harness/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f7fc" />
+    <meta name="author" content="鱼心 · Yuxin" />
+    <title>DeepSeek Harness 实战指南 · 从入门到生产 · 鱼心快跑</title>
+    <meta
+      name="description"
+      content="DeepSeek Harness 系统化实战手册：十分钟上手、权限边界、四种模式、事件溯源、成本账本、插件开发与生产踩坑。中英双语，命令可直接复制运行。"
+    />
+    <meta property="og:title" content="DeepSeek Harness 实战指南 · 从入门到生产" />
+    <meta
+      property="og:description"
+      content="把 DeepSeek Harness 讲透讲明白：从安装上手到插件开发，从成本优化到生产踩坑，照着命令敲就能跑。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:url" content="https://yuxinrun.github.io/deepseek-harness/" />
+    <meta property="og:site_name" content="鱼心快跑 · Yuxin Runs" />
+    <meta name="twitter:card" content="summary" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('dsh-theme')
+          var mode = stored || 'system'
+          var dark = mode === 'dark' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+          document.documentElement.dataset.themeMode = mode
+          document.documentElement.style.colorScheme = dark ? 'dark' : 'light'
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
