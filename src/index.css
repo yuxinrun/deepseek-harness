@@ -491,6 +491,11 @@ ol {
     padding: 24px 18px 64px;
   }
 
+  /* 窄屏隐藏主导航后，语言 / 主题 / 菜单三个按钮靠右对齐 */
+  .header-actions {
+    margin-left: auto;
+  }
+
   .menu-btn {
     display: grid;
   }
